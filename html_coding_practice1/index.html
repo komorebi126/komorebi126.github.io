@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>サイトタイトル</title>
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+
+  <!-- fabicon -->
+  <link rel="icon" href="./icon.ico">
+
+  <!-- font Awesome -->
+  <script src="https://kit.fontawesome.com/20ec3548d6.js"></script>
+
+  <!-- style.css -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <style type="text/css">
+    /*ここに調整CSS記述*/
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #content1 {
+      background: url(./img/bg03.png) center no-repeat;
+      background-size: cover;
+    }
+
+    /* .dropdown-item:hover {border-bottom: #333;} */
+  </style>
+</head>
+
+
+<body>
+  <!-- <div class="container-fluid w-100  m-auto p-0"> -->
+
+  <!-- header -->
+  <header>
+
+    <nav class="navbar navbar-dark bg-white p-0">
+      <div class="col-1 pr-0">
+        <a href="#" class="navbar-brand"><img src="./img/syoumeisyashin_man.png" class="img-fluid" alt="トップページロゴ"></a>
+
+
+      </div>
+      <div class="col-4 m-auto">
+
+        <div class="shadow-sm">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text bg-white border-0 h-100">
+                <i class="fas fa-search"></i>
+              </div>
+            </div>
+            <input class="form-control-lg w-75 border-0 font-weight-bold" type="text" placeholder="探す">
+          </div>
+        </div>
+
+
+      </div>
+      <div class="col-2">
+
+      </div>
+      <!-- dropdown1 -->
+      <div class="col-1 d-flex justify-content-center m-0 px-0 py-4">
+        <div class="dropdown">
+          <button type="button" id="dropdown1" class="btn" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            特集
+          </button>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown1">
+            <h6 class="dropdown-header disabled" href="#" style="font-size: 12px; font-weight: bold;">
+              <br>
+              特集１
+              <br>
+            </h6>
+            <a class="dropdown-item" href="#">
+              <div class="row">
+                <div class="col-10">
+                  <h6 style="font-weight: bold; color: #333;">
+                    タイトル１
+                  </h6>
+                  <p class="text-wrap">
+                    説明です。説明です。説明です。説明です。
+                  </p>
+                </div>
+              </div>
+            </a>
+            <a class="dropdown-item" href="#" style="font-weight: bold;">
+              タイトル２
+            </a>
+            <div class="dropdown-divider"></div>
+            <h6 class="dropdown-header" style="font-weight: bold; font-size: 12px;">
+              特集２
+            </h6>
+            <a class="dropdown-item" href="#">
+              <div class="row">
+                <div class="col-10">
+                  <h6 style="font-weight: bold; color: #333;">
+                    タイトル
+                  </h6>
+                  <p class="text-wrap">
+                    説明です。説明です。説明です。説明です。
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- dropdown2 -->
+      <div class="dropdown col-1 px-0 py-4 m-0">
+        <button type="button" id="dropdown2" class="btn" data-toggle="dropdown" area-haspopup="true"
+          aria-expanded="false">検索</button>
+        <div class="dropdown-menu" area-labelledby="dropdown2" style="width: 300px">
+          <span class="dropdown-item-text">
+            <div class="form-group">
+              <label for="serch">キーワード検索</label>
+              <div class="inputgroup">
+                <div class="row">
+                  <input id="serch" class="form-control w-75" type="text" name="">
+                </div>
+              </div>
+            </div>
+          </span>
+        </div>
+      </div>
+
+      <!-- modal1 -->
+      <button type="button" class="col-1 m-0 px-0 py-4 btn" data-toggle="modal" data-target="#modal1">新規登録</button>
+      <div id="modal1" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button class="close ml-0 px-0 py-2" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </div>
+            </button>
+            <div class="modal-body">
+              <div class="container border-bottom pb-4">
+                <div class="row">
+                  <div class="col-1"></div>
+                  <button type="button" class="btn btn-primary col-10">新規登録</button>
+                  <div class="col-1"></div>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <p class="col-8 mb-2" style="line-height: 36px; text-align: end">アカウントはお持ちですか？</p>
+                <a type="button" class="col-3 btn btn-success mb-3 mr-0" role="button" href="#">ログイン</a>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <!-- modal2 -->
+      <button type="button" class="col-1 m-0 px-0 py-4 btn" data-toggle="modal" data-target="#modal2">ログイン</button>
+      <div id="modal2" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button class="close ml-0 px-0 py-2" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </div>
+            </button>
+            <div class="modal-body">
+              <div class="container border-bottom pb-4">
+                <div class="row">
+                  <div class="col-1"></div>
+                  <button type="button" class="btn btn-success col-10">ログイン</button>
+                  <div class="col-1"></div>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <p class="col-8 mb-2" style="line-height: 36px; text-align: end">アカウントはお持ちですか？</p>
+                <a type="button" class="col-3 btn btn-primary mb-3 mr-0" role="button" href="#">新規登録</a>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+    </nav>
+
+  </header>
+
+  <!-- contents -->
+  <section id="contents">
+
+    <!-- コンテンツ１ -->
+    <section id="content1">
+      <div class="row text-white my-auto pl-5 ml-5" style="height: 600px;">
+        <div style="height: 150px; margin-top: 250px; margin-bottom: 200px; margin-left: 50px;">
+          <h1 class="font-weight-bolder">キャッチコピー１</h1>
+          <p>サブタイトルサブタイトル</p>
+          <span style="color: gray;">
+            <a class="btn btn-light btn-lg font-weight-bold" href="#" role="button">
+              クリックして登録
+            </a>
+          </span>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- コンテンツ２ -->
+    <section class="container-fluid my-5" id="content2">
+      <div class="container">
+        <h1 class="font-weight-bolder text-center my-5 text-body">キャッチコピー２</h1>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-3 m-3">
+          <div class="row justify-content-center">
+            <i class="far fa-envelope"></i>
+          </div>
+          <div class="row justify-content-center">
+            <h5 class="font-weight-bold text-center mb-4">特徴１</h5>
+          </div>
+          <div class="row justify-content-center">
+            <p>こんな特徴があります。こんな特徴があります。こんな特徴があります。</p>
+          </div>
+        </div>
+        <div class="col-3 m-3">
+          <div class="row justify-content-center">
+            <i class="far fa-envelope"></i>
+          </div>
+          <div class="row justify-content-center">
+            <h5 class="font-weight-bold text-center mb-4">特徴２</h5>
+          </div>
+          <div class="row justify-content-center">
+            <p>こんな特徴があります。こんな特徴があります。こんな特徴があります。</p>
+          </div>
+        </div>
+        <div class="col-3 m-3">
+          <div class="row justify-content-center">
+            <i class="far fa-envelope"></i>
+          </div>
+          <div class="row justify-content-center">
+            <h5 class="font-weight-bold text-center mb-4">特徴３</h5>
+          </div>
+          <div class="row justify-content-center">
+            <p>こんな特徴があります。こんな特徴があります。こんな特徴があります。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- コンテンツ３ -->
+  <section id="content3" style="background:teal;">
+    <div class="container mb-5 text-white p-5">
+      <div class="row justify-content-center">
+        <img src="./img/syoumeisyashin_man.png" alt="コンテンツ３の画像" width="150" height="150">
+      </div>
+      <div class="row justify-content-center">
+        <h1 class="font-weight-bold">キャッチコピー３</h1>
+      </div>
+      <div class="row justify-content-center mb-4">
+        <p>それっぽい一言</p>
+      </div>
+      <div class="row justify-content-center">
+        <button type="button" class="btn btn" style="background: #ee7777; color: white;">クリックして登録する</button>
+      </div>
+      <div class="row justify-content-center p-3">
+        <a href="#" style="color: white; opacity: 0.8;">なんかいい感じのフレーズ</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer>
+    <div class="container px-5 mb-5 pb-5">
+      <div class="row">
+        
+        <!-- menu1 -->
+        <div class="col-3 font-weight-bold">
+          <h6 class="font-weight-bold" style="color: #333;">メニュー１</h6>
+          <a class="d-block" style="color: #777; font-size: 14px;" href="#">その１</a>
+          <a class="d-block" style="color: #777; font-size: 14px;" href="#">その２</a>
+          <a class="d-block" style="color: #777; font-size: 14px;" href="#">その３</a>
+          <a class="d-block" style="color: #777; font-size: 14px;" href="#">その４</a>
+          <a class="d-block" style="color: #777; font-size: 14px;" href="#">その５</a>
+          <div class="d-block">
+            <a class="d-inline" style="color: #777; font-size: 14px;" href="#">その６</a>
+            <span class="badge d-inline text-white d-inline ml-1" style="background:teal;">新着</span>
+          </div>
+          <a class="d-block" style="color: #777; font-size: 14px;" href="#">その７</a>
+          <a class="d-block" style="color: #777; font-size: 14px;" href="#"></a>
+        </div>
+
+        <!-- menu2 -->
+        <div class="col-3 font-weight-bold">
+          <h6 class="font-weight-bold" style="color: #333;">メニュー２</h6>
+          <a class="d-block" style="color: #777; font-size: 14px;" href="#">その１</a>
+          <a class="d-block" style="color: #777; font-size: 14px;" href="#">その２</a>
+          <a class="d-block" style="color: #777; font-size: 14px;" href="#">その３</a>
+          <a class="d-block" style="color: #777; font-size: 14px;" href="#">その４</a>
+          <a class="d-block" style="color: #777; font-size: 14px;" href="#">その５</a>
+          <a class="d-block" style="color: #777; font-size: 14px;" href="#">その６</a>
+        </div>
+
+        <!-- menu3 -->
+        <div class="col-3 font-weight-bold">
+          <h6 class="font-weight-bold" style="color: #333;">メニュー３</h6>
+          <a class="d-block" style="color: #777; font-size: 14px;" href="#">その１</a>
+          <a class="d-block" style="color: #777; font-size: 14px;" href="#">その２</a>
+          <a class="d-block" style="color: #777; font-size: 14px;" href="#">その３</a>
+          <a class="d-block" style="color: #777; font-size: 14px;" href="#">その４</a>
+          <div class="d-block">
+            <a class="d-inline" style="color: #777; font-size: 14px;" href="#">その５</a>
+            <span class="badge d-inline text-white d-inline ml-1" style="background:teal;">新着</span>
+          </div>
+          <a class="d-block" style="color: #777; font-size: 14px;" href="#">その６</a>
+        </div>
+        <!--  -->
+        <div class="col-3 font-weight-bold pl-5">
+          <a class="d-block" style="color: #777; font-size: 14px;" href="#">利用規約</a>
+          <a class="d-block" style="color: #777; font-size: 14px;" href="#">プライバシー</a>
+          <a class="d-block" style="color: #777; font-size: 14px;" href="#">サイトマップ</a>
+        </div>
+      </div>
+      <div class="row border-top pt-3 mt-3">
+        <div class="col">
+          <div class="row">
+            <div style="width: 30px;">
+              <div class="col p-0 mt-3">
+                <div class="py-auto">
+                  <img src="img/syoumeisyashin_man.png" alt="ロゴ" height="30" width="30">
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <span class="text-muted" style="font-size: 13px; line-height: 1.0;">
+                <a href="#" class="text-muted">＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊<br>
+                  官公庁長官(**)第****号(20**年*月**日-20**年*月**日)</a><br>
+                ©20** ＊＊＊＊＊inc. All rights reserved.
+
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+        </div>
+        <div class="col-3 d-flex justify-content-center pt-2 pb-4">
+          <button type="button" class=" btn btn-light text-muted font-weight-bold m-1">日本語
+            <button type="button" class=" btn btn-light text-muted font-weight-bold m-1">JPY-￥</button>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  <!-- </div> -->
+</body>
+
+</html>
