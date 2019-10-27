@@ -1,0 +1,323 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, 游ゴシック, YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  width: 100%;
+  height: 545px;
+  font-weight: 400;
+}
+
+header {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: 30;
+}
+
+header .m-siteLogo {
+  height: 72px;
+  width: 266px;
+  font-size: 26px;
+  line-height: 44px;
+  margin: 50px 0px 0px 88.427px;
+
+
+  background: url(../img/siteLogo-pc@2x.png)no-repeat;
+  background-attachment: scroll;
+  background-size: 266px 72px;
+  overflow: hidden;
+}
+
+header .m-siteLogo a {
+  height: 72px;
+  width: 266px;
+  /* letter-spacing: 0.1em; */
+
+  overflow: hidden;
+
+}
+
+header {
+  height: 122px;
+  color: white;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 22px;
+  background: transparent;
+}
+
+header a {
+  color: white;
+
+}
+
+header #nav-1 {
+  font-family: "Gill Sans Std Book", sans-serif;
+  margin-right: 7%;
+  margin-top: 75px;
+  /* background: #656c6e; */
+
+}
+
+header #nav-2{
+  background: transparent;
+  font-family: "Gill Sans Std Book", sans-serif;
+  color: #656c6e;
+}
+
+#nav-2 .nav-2 {
+  background: white;
+  width: 100%;
+}
+
+#nav-2 a{
+  color: white;
+  font-size: 14px;
+  line-height: 24px;
+  margin-right: 10px;
+}
+
+#nav-2 span{
+  margin: auto 30px;
+}
+
+
+#nav-2 button{
+  border: 0;
+  margin: 0;
+  padding: auto 0;
+}
+
+#nav-2 button:hover{
+  border: none;
+}
+
+#nav-2 .collapse {
+  background-color: #13191b;
+  opacity: 0.8;
+}
+
+#mainVisual {
+
+  height: 459px;
+  width: 100%;
+  background: rgb(190, 190, 190);
+  position: relative;
+}
+
+#mainVisual img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* z-index: -10; */
+  
+}
+
+#section1 {
+  width: 100%;
+  color: #13191b;
+  padding: 110px 0 110px 0;
+  background: rgb(246, 246, 246);
+  z-index: 200;
+}
+
+
+#section1 h1 {
+  position: center;
+  text-align: center;
+  font-size: 44px;
+  line-height: 75px;
+
+}
+
+#section1 p {
+  width: 370px;
+  position: center;
+  margin: auto;
+  font-size: 20px;
+  line-height: 34px;
+  margin-top: 20px;
+}
+
+#section2 {
+  padding: 110px 0;
+  color: #13191b;
+
+}
+
+#section2 .container {
+  width: 75%;
+  margin: auto;
+  padding: auto;
+}
+
+
+#section2 h1 {
+  font-size: 30px;
+  line-height: 30px;
+  padding-bottom: 17px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.moreBtn {
+  width: 162px;
+  height: 46px;
+  border: 1px solid #13191b;
+  border-radius: 0;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.moreBtn:hover {
+  background: #13191b;
+  color: white;
+}
+
+#section2 .row {
+  width: 90%;
+  margin: auto;
+}
+
+#section2 .product {
+  margin-top: 60px;
+}
+
+#section2 h2 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 34px;
+  color: #13191b;
+
+}
+
+#section3 {
+  padding: 110px 0;
+  color: #13191b;
+  background: rgb(246, 246, 246)
+}
+
+#section3 .container {
+  /* width: 75%; */
+  margin: auto;
+  padding: auto;
+}
+
+#section3 h1 {
+  font-size: 30px;
+  line-height: 30px;
+  padding-bottom: 17px;
+  font-weight: 400;
+  margin: 0;
+}
+
+#section3 article {
+  margin: 60px 0 0 0;
+}
+
+#section3 .row {
+  width: 90%;
+  margin: auto;
+}
+
+#section3 h2 {
+  font-size: 18px;
+  line-height: 31px;
+  font-weight: 700;
+  color: #13191b;
+
+}
+
+#section3 p {
+  color: #656c6e;
+  font-size: 13px;
+  line-height: 22px;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+#section3 .date {
+  font-family: "Gill Sans Std Book", sans-serif;
+  font-size: 13px;
+  line-height: 22px;
+  margin: 0;
+}
+
+.go-top img {
+  position: center;
+  margin: 0 auto;
+  transform: rotate(-90deg);
+}
+
+.share {
+  padding: 35px 0;
+  font-size: 14px;
+  line-height: 48px;
+}
+
+.share button {
+  border: 1px black solid;
+  border-radius: 0;
+  margin: 0 15px;
+  height: 46px;
+  width: 162px;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.share .share-fb {
+  color: #4871a9;
+  border: 1px #4871a9 solid;
+}
+
+.share .share-tw {
+  color: #70bdd3;
+  border: 1px #70bdd3 solid;
+}
+
+.share .share-hb {
+  color: #2f9bcd;
+  border: 1px #2f9bcd solid;
+}
+
+.share .share-line {
+  color: #8ec09d;
+  border: 1px #8ec09d solid;
+}
+
+.footer-nav {
+  background: #939899;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+
+}
+
+.footer-nav nav {
+  padding: 30px 0;
+}
+
+.footer-nav a {
+  color: white;
+  margin-right: 40px;
+  font-family: "Gill Sans Std Book", sans-serif;
+
+}
+
+
+footer {
+  background: #656c6e;
+  color: white;
+  text-align: center;
+  line-height: 16px;
+  font-size: 10px;
+  padding: 35px 0;
+}
+
+footer .footer-logo {
+  height: 89px;
+  width: 90px;
+  margin: 0 20px 20px 20px;
+}
+
+footer small {
+  margin-top: 35px;
+}
